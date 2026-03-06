@@ -1,0 +1,335 @@
+ :root {
+         --ink: #0d0d0d;
+         --paper: #f5f0e8;
+         --accent: #c8382a;
+         --muted: #8a8070;
+         --gold: #b89a5a;
+         --realgold: #D4AF37;
+         --charcoal: #1F1F1F;
+         --white: #FFFFFF;
+         --deepblack: #0B0B0B;
+         --blue: #3B82F6;
+         --royal: #2563EB;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+            background: var(--paper);
+            color: var(--ink);
+            overflow-x: hidden;
+}
+
+body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+     position: fixed;
+     top: 0; left: 0; right: 0;
+     z-index: 100;
+     padding: 24px 48px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     mix-blend-mode: multiply;
+}
+
+logo{
+    color: var(--ink);
+    text-align: left;
+    font-size: 50px;
+    padding-left: 10px;
+    letter-spacing: 0.08em;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.navbar{
+    font-size: 22px;
+    display: flex;
+    gap: 24px;
+    
+}
+
+.navbar a{
+     font-size: 19px;
+     font-weight: 500;
+     letter-spacing: 0.15em;
+     text-transform: uppercase;
+     color: var(--ink);
+     text-decoration: none;
+     position: relative;
+     padding-bottom: 2px;
+     display: inline-block;
+}
+
+.navbar a::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    width: 0; /* Initial width is zero */
+    height: 2px; /* Line thickness */
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Position the line at the bottom */
+    background: var(--accent); /* Line color */
+    transition: width 0.3s ease-in-out; /* Smooth transition for the width property */
+}
+
+.navbar a:hover::after {
+     width: 100%; 
+    }
+
+h2{
+    font-family: 'Roboto condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+.motto{
+    font-family: 'Roboto condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(20)forwards,
+    fadeOut 0.8s ease 4s forwards; /* starts fading at 4s when typing ends */
+    margin-top: 140px;  /* pushes below fixed header */
+    margin-left: auto;  /* add this */
+    margin-right: auto; /* add this */
+  
+
+}
+
+/* animation fadein*/
+@keyframes typing{
+    from{width: 0}
+    to{width: 300px}
+}
+
+/* animation fadeout */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.hero {
+            min-height: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 48px;
+            position: relative;
+            overflow: hidden;
+}
+ .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 40px;
+            animation: fadeUp 1s ease both;
+            margin-top: 40px;
+        }
+
+        .word {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .word::before {
+            content: '';
+            display: block;
+            width: 40px; height: 1px;
+            background: var(--muted);
+        }
+
+        .hero-name {
+            font-family: 'Roboto condensed', serif;
+            font-size: clamp(52px, 6vw, 88px);
+            font-weight: 900;
+            line-height: 0.95;
+            margin-bottom: 32px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-name em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero-desc {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--charcoal);
+            max-width: 380px;
+            margin-bottom: 48px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            padding: 14px 32px;
+            background: var(--ink);
+            color: var(--realgold);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.25s, color 0.25s;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent);
+        }
+
+        .btn-outline {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--ink);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline::after {
+            content: '→';
+            transition: transform 0.25s;
+        }
+
+        .btn-outline:hover::after { transform: translateX(5px); }
+
+        /*THE BOX*/
+
+        
+        .hero-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: fadeUp 1s 0.2s ease both;
+        }
+
+        .hero-img-frame {
+            width: 380px;
+            height: 480px;
+            position: relative;
+        }
+
+        .hero-img-bg {
+            position: absolute;
+            inset: 16px -16px -16px 16px;
+            background: var(--gold);
+            opacity: 0.3;
+        }
+
+        .hero-img-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #605028 0%, #8a8070 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-img-placeholder {
+            font-family: 'Roboto condensed', serif;
+            font-size: 100px;
+            font-weight: 900;
+            color: rgba(255,255,255,0.15);
+            letter-spacing: -0.05em;
+            user-select: none;
+        }
+
+        .hero-stats {
+            position: absolute;
+            bottom: -20px;
+            left: -40px;
+            background: rgb(255, 255, 255);
+            padding: 20px 28px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 32px;
+        }
+
+        .stat-item { text-align: center; }
+
+        .stat-num {
+            font-family: 'Roboto condensed', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--ink);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 40px;
+            left: 48px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            writing-mode: vertical-rl;
+        }
+
+        .scroll-line {
+            width: 1px;
+            height: 60px;
+            background: var(--muted);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scroll-line::after {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--accent);
+            animation: scrollAnim 2s ease infinite;
+        }
