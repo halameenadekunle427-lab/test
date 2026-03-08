@@ -1,24 +1,283 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style(services).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>SERVICES — PORTFOLIO</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-    <logo>SERVICE</logo>
+        <logo><a href="index.html">HOME</a></logo>
         <div class="navbar">
             <a href="about.html">ABOUT</a>
             <a href="projects.html">PROJECTS</a>
             <a href="index.html">HOME</a>
-            <a href="contact.html">CONTACT</a>    
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
         </div>
     </header>
-    <h2 class="1st">There is possibility in impossibility</h2>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="about.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <p class="page-label">— What I Offer</p>
+        <h1 class="page-title">Services<em>.</em></h1>
+        <p class="page-sub">From pixels to databases — every layer of the stack, handled with craft.</p>
+    </section>
+
+    <!-- TOOLS & LANGUAGES GRID -->
+    <section class="tools-section">
+        <h2 class="section-label">Tools &amp; Technologies</h2>
+        <div class="lang-box">
+
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="HTML5"><span class="icon-fallback">HTML</span></div>
+                <span class="icon-name">HTML5</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="CSS3"><span class="icon-fallback">CSS</span></div>
+                <span class="icon-name">CSS3</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="JavaScript"><span class="icon-fallback">JS</span></div>
+                <span class="icon-name">JavaScript</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="C++"><span class="icon-fallback">C++</span></div>
+                <span class="icon-name">C++</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Python"><span class="icon-fallback">PY</span></div>
+                <span class="icon-name">Python</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Node.js"><span class="icon-fallback">NODE</span></div>
+                <span class="icon-name">Node.js</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="React"><span class="icon-fallback">REA</span></div>
+                <span class="icon-name">React</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="MySQL"><span class="icon-fallback">SQL</span></div>
+                <span class="icon-name">MySQL</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Figma"><span class="icon-fallback">FIG</span></div>
+                <span class="icon-name">Figma</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Photoshop"><span class="icon-fallback">PS</span></div>
+                <span class="icon-name">Photoshop</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Illustrator"><span class="icon-fallback">AI</span></div>
+                <span class="icon-name">Illustrator</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Blender"><span class="icon-fallback">BLN</span></div>
+                <span class="icon-name">Blender</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Godot"><span class="icon-fallback">GDT</span></div>
+                <span class="icon-name">Godot</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Unity"><span class="icon-fallback">UNITY</span></div>
+                <span class="icon-name">Unity</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="After Effects"><span class="icon-fallback">AE</span></div>
+                <span class="icon-name">After Effects</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Premiere Pro"><span class="icon-fallback">PR</span></div>
+                <span class="icon-name">Premiere Pro</span>
+            </div>
+            <div class="icon-slot">
+                <div class="icon-img"><img src="" alt="Git"><span class="icon-fallback">GIT</span></div>
+                <span class="icon-name">Git</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES LIST -->
+    <section class="services-section">
+        <h2 class="section-label">What I Do</h2>
+        <div class="text-frame">
+
+            <div class="service-row" data-num="01">
+                <div class="service-row-left">
+                    <span class="service-num">01</span>
+                    <h3 class="txt">UI / UX Design</h3>
+                </div>
+                <p class="service-detail">Clean, intuitive interfaces crafted in Figma — from low-fi wireframes to pixel-perfect, interactive prototypes ready for handoff.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="02">
+                <div class="service-row-left">
+                    <span class="service-num">02</span>
+                    <h3 class="txt">Frontend Development</h3>
+                </div>
+                <p class="service-detail">Responsive, performant websites built with modern HTML, CSS &amp; JavaScript. Fast, accessible, and built to last.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="03">
+                <div class="service-row-left">
+                    <span class="service-num">03</span>
+                    <h3 class="txt">Backend Development</h3>
+                </div>
+                <p class="service-detail">Robust APIs, databases &amp; server-side logic powering seamless, scalable applications — built with Node.js, Python, and SQL.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="04">
+                <div class="service-row-left">
+                    <span class="service-num">04</span>
+                    <h3 class="txt">C++ Development</h3>
+                </div>
+                <p class="service-detail">High-performance applications, tools, and systems crafted in modern C++ — where speed, control, and precision are non-negotiable.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="05">
+                <div class="service-row-left">
+                    <span class="service-num">05</span>
+                    <h3 class="txt">Brand Identity</h3>
+                </div>
+                <p class="service-detail">Visual systems that tell your story — logos, typography, colour palettes, and everything that makes a brand unforgettable.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="06">
+                <div class="service-row-left">
+                    <span class="service-num">06</span>
+                    <h3 class="txt">Photo Editing</h3>
+                </div>
+                <p class="service-detail">Professional retouching, compositing, and creative photo manipulation using Photoshop and Illustrator — polished to perfection.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="07">
+                <div class="service-row-left">
+                    <span class="service-num">07</span>
+                    <h3 class="txt">Video Editing</h3>
+                </div>
+                <p class="service-detail">Cinematic cuts, motion graphics &amp; colour grading that transform raw footage into compelling, story-driven content.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="08">
+                <div class="service-row-left">
+                    <span class="service-num">08</span>
+                    <h3 class="txt">Animation</h3>
+                </div>
+                <p class="service-detail">Bringing characters and visuals to life — from rigged 3D character animations in Blender to smooth motion graphics in After Effects.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="09">
+                <div class="service-row-left">
+                    <span class="service-num">09</span>
+                    <h3 class="txt">3D Modelling</h3>
+                </div>
+                <p class="service-detail">Sculpting, modelling, and rendering stunning 3D assets, environments, and scenes using Blender — from concept to final render.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="10">
+                <div class="service-row-left">
+                    <span class="service-num">10</span>
+                    <h3 class="txt">Game Development</h3>
+                </div>
+                <p class="service-detail">Engaging 2D/3D game experiences built in Godot and Unity — from core mechanics and level design to fully polished, interactive worlds.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="11">
+                <div class="service-row-left">
+                    <span class="service-num">11</span>
+                    <h3 class="txt">Technical Consulting</h3>
+                </div>
+                <p class="service-detail">Helping individuals and small teams choose the right stack, plan architecture, and execute ideas with clarity and confidence.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+            <div class="service-row" data-num="12">
+                <div class="service-row-left">
+                    <span class="service-num">12</span>
+                    <h3 class="txt">Freelance Packages</h3>
+                </div>
+                <p class="service-detail">Custom scoped packages for startups and creators — combining design, development, and media production under one roof.</p>
+                <span class="service-arrow">→</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="cta-inner">
+            <h2>Got a project in mind<em>?</em></h2>
+            <a href="contact.html" class="btn-primary">Let's talk →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <logo>HOME</logo>
+                <p>Building the web, one pixel at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 · All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        toggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.service-row').forEach(row => {
+            row.addEventListener('click', () => {
+                row.classList.toggle('expanded');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -3,21 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style(abou).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>ABOUT — PORTFOLIO</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-    <logo>ABOUT</logo>
+        <logo><a href="index.html">HOME</a></logo>
         <div class="navbar">
             <a href="index.html">HOME</a>
             <a href="projects.html">PROJECTS</a>
             <a href="service.html">SERVICES</a>
-            <a href="contact.html">CONTACT</a>    
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
         </div>
     </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="service.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <p class="page-label">— Who I Am</p>
+        <h1 class="page-title">About<em>.</em></h1>
+        <p class="page-sub">Developer. Designer. Creator. A little bit of everything.</p>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="intro-section">
+        <div class="intro-img-col">
+            <div class="intro-img-frame">
+                <div class="intro-img-bg"></div>
+                <div class="intro-img-box">
+                    <span class="intro-img-placeholder">ME</span>
+                </div>
+            </div>
+            <!-- availability badge -->
+            <div class="availability-badge">
+                <span class="dot"></span> Available for Freelance
+            </div>
+        </div>
+
+        <div class="intro-text-col">
+            <p class="intro-tag">// Introduction</p>
+            <h2 class="intro-heading">I build things that<br><em>look good</em> and work great.</h2>
+            <p class="intro-body">
+                Hi, I'm a multidisciplinary creator based in Nigeria — blending frontend and backend development, 3D art, game design, video editing, and visual design into one cohesive skill set.
+            </p>
+            <p class="intro-body">
+                I've been passionate about technology and creativity for 3+ years, constantly pushing to learn new tools, build new things, and solve real problems with clean, thoughtful work.
+            </p>
+            <p class="intro-body">
+                Whether it's a slick website, a game built in Godot, a 3D render in Blender, or a cinematic edit — I bring the same energy and attention to detail to everything I touch.
+            </p>
+            <a href="contact.html" class="btn-primary">Work With Me →</a>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip">
+        <div class="stat-item">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">12+</span>
+            <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-num">11</span>
+            <span class="stat-label">Services Offered</span>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+        <h2 class="section-title">Skills<em>.</em></h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-group">
+                <h3 class="skill-group-title">⌘ &nbsp;Development</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML / CSS</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js / Backend</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 class="skill-group-title">✦ &nbsp;Design & Creative</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Figma / UI Design</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Photoshop</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Illustrator</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Blender / 3D</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Animation</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 78%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3 class="skill-group-title">⚔ &nbsp;Game & Video</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Godot</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Unity</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Premiere Pro</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">After Effects</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TIMELINE / JOURNEY -->
+    <section class="journey-section">
+        <h2 class="section-title">Journey<em>.</em></h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2022</span>
+                    <h3>Started Coding</h3>
+                    <p>Wrote my first lines of HTML and CSS. Got instantly hooked and never looked back.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2022</span>
+                    <h3>Discovered Design</h3>
+                    <p>Picked up Figma and Photoshop — realized that great products need both great code and great visuals.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2023</span>
+                    <h3>Expanded into 3D & Games</h3>
+                    <p>Started learning Blender for 3D modelling and Godot for game development. Fell in love with both.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2023</span>
+                    <h3>First Freelance Clients</h3>
+                    <p>Landed my first paying projects — websites, video edits, and design work for real clients.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2025 — Now</span>
+                    <h3>Full Stack Creator</h3>
+                    <p>Building across all disciplines — web, games, 3D, video, and design — open to exciting new projects.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="cta-inner">
+            <h2>Like what you see<em>?</em></h2>
+            <a href="contact.html" class="btn-primary">Let's work together →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <logo>HOME</logo>
+                <p>Building the web, one pixel at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">LI</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 · All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const toggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        toggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+
+        // Animate skill bars on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+                        bar.style.width = bar.style.width;
+                        bar.classList.add('animate');
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.skill-group').forEach(g => observer.observe(g));
+    </script>
 </body>
 </html>

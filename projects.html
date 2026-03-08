@@ -6,98 +6,415 @@
     <link rel="stylesheet" href="style(projects).css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>PROJECTS — PORTFOLIO</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-    <logo>PROJECTS</logo>
+        <logo><a href="index.html">HOME</a></logo>
         <div class="navbar">
             <a href="about.html">ABOUT</a>
             <a href="index.html">HOME</a>
             <a href="service.html">SERVICES</a>
-            <a href="contact.html">CONTACT</a>    
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
         </div>
     </header>
-    <div class="container">
-        <div class="box">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content">The project is on induction</div>
-            </div>
-        </div>
-        <div class="box1">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="box2">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html">HOME</a>
+        <a href="service.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
     </div>
-    <div class="container1">
-        <div class="box3">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="box4">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="box5">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <p class="page-label">— Selected Work</p>
+        <h1 class="page-title">Projects<em>.</em></h1>
+        <p class="page-sub">A collection of things I've built, designed, and shipped.</p>
+    </section>
+
+    <!-- FILTER TABS -->
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="game">Game Dev</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="3d">3D / Blender</button>
+        <button class="filter-btn" data-filter="animation">Animation</button>
+        <button class="filter-btn" data-filter="cpp">C++</button>
+        <button class="filter-btn" data-filter="photo">Photoshop</button>
     </div>
-    <div class="container2">
-        <div class="box6">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
+
+    <!-- PROJECTS GRID -->
+    <main class="projects-grid">
+
+        <article class="project-card" data-category="frontend">
+            <div class="card-img">
+                <img src="" alt="Project 1">
+                <div class="card-img-placeholder">01</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Frontend</span>
+                    <span class="card-num">01</span>
+                </div>
+                <h2 class="card-title">Induction Project</h2>
+                <p class="card-desc">The project is on induction — exploring core concepts through interactive design and clean code.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="design">
+            <div class="card-img">
+                <img src="" alt="Project 2">
+                <div class="card-img-placeholder">02</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Design</span>
+                    <span class="card-num">02</span>
+                </div>
+                <h2 class="card-title">2nd Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+            <div class="card-img">
+                <img src="" alt="Project 3">
+                <div class="card-img-placeholder">03</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Backend</span>
+                    <span class="card-num">03</span>
+                </div>
+                <h2 class="card-title">3rd Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="game">
+            <div class="card-img">
+                <img src="" alt="Project 4">
+                <div class="card-img-placeholder">04</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Game Dev</span>
+                    <span class="card-num">04</span>
+                </div>
+                <h2 class="card-title">4th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="video">
+            <div class="card-img">
+                <img src="" alt="Project 5">
+                <div class="card-img-placeholder">05</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Video</span>
+                    <span class="card-num">05</span>
+                </div>
+                <h2 class="card-title">5th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+            <div class="card-img">
+                <img src="" alt="Project 6">
+                <div class="card-img-placeholder">06</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Frontend</span>
+                    <span class="card-num">06</span>
+                </div>
+                <h2 class="card-title">6th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="design">
+            <div class="card-img">
+                <img src="" alt="Project 7">
+                <div class="card-img-placeholder">07</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Design</span>
+                    <span class="card-num">07</span>
+                </div>
+                <h2 class="card-title">7th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+            <div class="card-img">
+                <img src="" alt="Project 8">
+                <div class="card-img-placeholder">08</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Backend</span>
+                    <span class="card-num">08</span>
+                </div>
+                <h2 class="card-title">8th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="game">
+            <div class="card-img">
+                <img src="" alt="Project 9">
+                <div class="card-img-placeholder">09</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Game Dev</span>
+                    <span class="card-num">09</span>
+                </div>
+                <h2 class="card-title">9th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="video">
+            <div class="card-img">
+                <img src="" alt="Project 10">
+                <div class="card-img-placeholder">10</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Video</span>
+                    <span class="card-num">10</span>
+                </div>
+                <h2 class="card-title">10th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="frontend">
+            <div class="card-img">
+                <img src="" alt="Project 11">
+                <div class="card-img-placeholder">11</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Frontend</span>
+                    <span class="card-num">11</span>
+                </div>
+                <h2 class="card-title">11th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="design">
+            <div class="card-img">
+                <img src="" alt="Project 12">
+                <div class="card-img-placeholder">12</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Design</span>
+                    <span class="card-num">12</span>
+                </div>
+                <h2 class="card-title">12th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="3d">
+            <div class="card-img">
+                <img src="" alt="Project 13">
+                <div class="card-img-placeholder">13</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">3D / Blender</span>
+                    <span class="card-num">13</span>
+                </div>
+                <h2 class="card-title">13th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="animation">
+            <div class="card-img">
+                <img src="" alt="Project 14">
+                <div class="card-img-placeholder">14</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Animation</span>
+                    <span class="card-num">14</span>
+                </div>
+                <h2 class="card-title">14th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="cpp">
+            <div class="card-img">
+                <img src="" alt="Project 15">
+                <div class="card-img-placeholder">15</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">C++</span>
+                    <span class="card-num">15</span>
+                </div>
+                <h2 class="card-title">15th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="photo">
+            <div class="card-img">
+                <img src="" alt="Project 16">
+                <div class="card-img-placeholder">16</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <span class="card-tag">Photoshop</span>
+                    <span class="card-num">16</span>
+                </div>
+                <h2 class="card-title">16th Project</h2>
+                <p class="card-desc">Description coming soon.</p>
+                <div class="card-footer">
+                    <a href="#" class="card-link">View Project <span>→</span></a>
+                    <a href="#" class="card-link-secondary">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <logo>HOME</logo>
+                <p>Building the web, one pixel at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">LI</a>
             </div>
         </div>
-        <div class="box7">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2025 · All rights reserved</p>
         </div>
-        <div class="box8">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container3">
-        <div class="box9">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="box10">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="box11">
-            <div class="text1">
-                <div class="top">1ST PROJECT</div>
-                <div class="content"></div>
-            </div>
-        </div>
-    </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const toggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        toggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+
+        // Filter logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const match = filter === 'all' || card.dataset.category === filter;
+                    card.style.display = match ? 'flex' : 'none';
+                    if (match) {
+                        card.style.animation = 'fadeUp 0.4s ease both';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
