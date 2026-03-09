@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/halameenadekunle427-lab/test#readme",
+  "bugs": {
+    "url": "https://github.com/halameenadekunle427-lab/test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halameenadekunle427-lab/test.git"
+  },
+  "license": "ISC",
+  "author": "Halameen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^9.2.4"
+  }
+}
